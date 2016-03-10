@@ -1,0 +1,14 @@
+<label>Search</label>
+<input type="text" value="Doe" />
+
+<h3>Search Results</h3>
+<div class="list-group" ng-repeat="person in people">
+    <search-result person-object="person" person-address-function="formatAddress(aperson)"></search-result>
+
+
+    <!--
+        We can do this also by the following:
+        <div search-result></div>
+        <div class="search-result"></div>
+    -->
+</div>
